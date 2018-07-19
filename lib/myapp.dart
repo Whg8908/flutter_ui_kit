@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_kit/ui/pages/home_page.dart';
 import 'package:ui_kit/utils/uidata.dart';
 
 class MyApp extends StatelessWidget {
@@ -9,58 +10,13 @@ class MyApp extends StatelessWidget {
       primarySwatch: Colors.amber,
       fontFamily: UIData.quickFont,
     ),
-    home: new MyHomePage(title: 'Flutter Demo Home Page'),
+    debugShowCheckedModeBanner: false, //不显示degbumode标签
+    showPerformanceOverlay: false, //是否显示调试工具
+    home: new HomePage(),
   );
 
   @override
   Widget build(BuildContext context) {
     return materialApp;
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => new _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(widget.title),
-      ),
-      body: new Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            new Text(
-              'You have pushed the button this many times:',
-            ),
-            new Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: new FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: new Icon(Icons.add),
-      ),
-    );
   }
 }

@@ -5,7 +5,7 @@
 // are correct.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_app/myapp.dart';
+import 'package:ui_kit/myapp.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 
