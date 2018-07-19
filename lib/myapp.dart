@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:ui_kit/utils/uidata.dart';
 
 class MyApp extends StatelessWidget {
   final materialApp = new MaterialApp(
-    title: 'Flutter Demo',
+    title: UIData.appName,
     theme: new ThemeData(
-      primarySwatch: Colors.blue,
+      primaryColor: Colors.black,
+      primarySwatch: Colors.amber,
+      fontFamily: UIData.quickFont,
     ),
     home: new MyHomePage(title: 'Flutter Demo Home Page'),
   );
