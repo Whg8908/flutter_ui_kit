@@ -3,8 +3,7 @@ import 'package:ui_kit/ui/widgets/about_tile.dart';
 import 'package:ui_kit/utils/uidata.dart';
 
 //通用drawer
-class CommonDrawer extends StatelessWidget{
-
+class CommonDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -75,5 +74,4 @@ class CommonDrawer extends StatelessWidget{
       ),
     );
   }
-
 }
