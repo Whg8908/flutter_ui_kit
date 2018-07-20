@@ -28,7 +28,7 @@ ADDED from /whg/Study/Flutter/Wndroid/ui_kit/android/app/src/main/AndroidManifes
 application
 ADDED from /whg/Study/Flutter/Wndroid/ui_kit/android/app/src/main/AndroidManifest.xml:15:5-38:19
 	android:label
-		ADDED from /whg/Study/Flutter/Wndroid/ui_kit/android/app/src/main/AndroidManifest.xml:17:9-36
+		ADDED from /whg/Study/Flutter/Wndroid/ui_kit/android/app/src/main/AndroidManifest.xml:17:9-31
 	android:icon
 		ADDED from /whg/Study/Flutter/Wndroid/ui_kit/android/app/src/main/AndroidManifest.xml:18:9-43
 	android:name

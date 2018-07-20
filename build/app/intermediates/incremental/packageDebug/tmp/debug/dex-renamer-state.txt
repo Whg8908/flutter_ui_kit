@@ -1,4 +1,4 @@
-#Thu Jul 19 23:58:48 CST 2018
+#Fri Jul 20 14:22:42 CST 2018
 base.0=/whg/Study/Flutter/Wndroid/ui_kit/build/app/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
