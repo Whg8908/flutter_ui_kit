@@ -168,7 +168,7 @@ class HomePage extends StatelessWidget {
                               onTap: () {
                                 Navigator.pop(context);
                                 Navigator.pushNamed(
-                                    context, "/${data.items[i]}");
+                                    context, "/${data.pages[i]}");
                               },
                             ),
                           ),

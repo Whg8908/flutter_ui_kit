@@ -4,6 +4,26 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class UIData{
+  //routes
+  static const String homeRoute = "/home";
+  static const String profileOneRoute = "/View Profile";
+  static const String profileTwoRoute = "/Profile 2";
+  static const String notFoundRoute = "/No Search Result";
+  static const String timelineOneRoute = "/Feed";
+  static const String timelineTwoRoute = "/Tweets";
+  static const String settingsOneRoute = "/Device Settings";
+  static const String shoppingOneRoute = "/Shopping List";
+  static const String shoppingTwoRoute = "/Shopping Details";
+  static const String shoppingThreeRoute = "/Product Details";
+  static const String paymentOneRoute = "/Credit Card";
+  static const String paymentTwoRoute = "/Payment Success";
+  static const String loginOneRoute = "/Login With OTP";
+  static const String loginTwoRoute = "/Login 2";
+  static const String dashboardOneRoute = "/Dashboard 1";
+  static const String dashboardTwoRoute = "/Dashboard 2";
+
+
+
   //strings
   static const String appName = "Whg's UIKit";
 
@@ -34,6 +54,9 @@ class UIData{
   static const String timelineImage = "$imageDir/timeline.jpeg";
   static const String verifyImage = "$imageDir/verification.jpg";
   static const String homeToolBarBgImage = "https://mmbiz.qpic.cn/mmbiz_jpg/cprpPre9lU2FFLzvPpWZHOp0iaIymJGq3qy89LcE8d1LficKicqsaibqEjD9HJIjUwA7fh13bHUoVJOO9pkoFQqmzw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1";
+
+  //gneric
+  static const String coming_soon = "敬请等待";
 
 
 }
