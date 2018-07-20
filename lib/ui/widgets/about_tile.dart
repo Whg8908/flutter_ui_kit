@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_kit/utils/uidata.dart';
 
-
-class MyAboutTile extends StatelessWidget{
-
+class MyAboutTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    return AboutListTile(

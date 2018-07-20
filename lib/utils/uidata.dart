@@ -13,7 +13,7 @@ class UIData{
   //colors
   static List<Color> kitGradients = [
     Colors.blueGrey.shade800,
-    Colors.black87,
+    Colors.brown.shade100,
   ];
   static List<Color> kitGradients2 = [
     Color(0xffb7ac50),
@@ -33,6 +33,7 @@ class UIData{
   static const String shoppingImage = "$imageDir/shopping.jpeg";
   static const String timelineImage = "$imageDir/timeline.jpeg";
   static const String verifyImage = "$imageDir/verification.jpg";
+  static const String homeToolBarBgImage = "https://mmbiz.qpic.cn/mmbiz_jpg/cprpPre9lU2FFLzvPpWZHOp0iaIymJGq3qy89LcE8d1LficKicqsaibqEjD9HJIjUwA7fh13bHUoVJOO9pkoFQqmzw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1";
 
 
 }

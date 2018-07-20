@@ -5,6 +5,7 @@ import 'package:ui_kit/ui/widgets/about_tile.dart';
 import 'package:ui_kit/ui/widgets/profile_tile.dart';
 import 'package:ui_kit/utils/uidata.dart';
 
+//主页面Widget
 class HomePage extends StatelessWidget {
   final _scaffoldState = GlobalKey<ScaffoldState>();
 
@@ -38,7 +39,7 @@ class HomePage extends StatelessWidget {
 
   //appBar
   Widget appBar() => SliverAppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.blueGrey.shade800,
         pinned: true,
         elevation: 10.0,
         forceElevated: true,
@@ -46,8 +47,17 @@ class HomePage extends StatelessWidget {
         flexibleSpace: FlexibleSpaceBar(
           centerTitle: false,
           background: Container(
-            decoration: BoxDecoration(
-                gradient: LinearGradient(colors: UIData.kitGradients)),
+//            child: new Image.network(UIData.homeToolBarBgImage, fit: BoxFit.fill),
+//            decoration: BoxDecoration(
+//                 gradient: LinearGradient(colors: UIData.kitGradients)),
+            //更换头部背景
+            child: new Stack(
+              fit: StackFit.expand,
+              children: <Widget>[
+                new Image.network(UIData.homeToolBarBgImage, fit: BoxFit.fill),
+                menuColor(),
+              ],
+            ),
           ),
           title: Row(
             children: <Widget>[
@@ -76,6 +86,7 @@ class HomePage extends StatelessWidget {
         }, childCount: data.length),
       );
 
+  //每个item的View
   Widget menuStack(BuildContext context, Menu data) => InkWell(
         onTap: () => _showModalBottomSheet(context, data),
         splashColor: Colors.orange,
@@ -128,8 +139,10 @@ class HomePage extends StatelessWidget {
         ],
       );
 
+  //每个item的点击事件
   void _showModalBottomSheet(BuildContext context, Menu data) {
-    showModalBottomSheet(  //自适应布局
+    showModalBottomSheet(
+        //自适应布局
         context: context,
         builder: (context) => Material(
               color: Colors.white,
@@ -148,7 +161,8 @@ class HomePage extends StatelessWidget {
                       shrinkWrap: false,
                       itemCount: data.items.length,
                       itemBuilder: (context, i) => Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 10.0),
                             child: ListTile(
                               title: Text(data.items[i]),
                               onTap: () {
@@ -166,6 +180,7 @@ class HomePage extends StatelessWidget {
             ));
   }
 
+  //bottomSheet的header
   Widget header() => Ink(
         decoration: BoxDecoration(
           gradient: LinearGradient(colors: UIData.kitGradients2),
