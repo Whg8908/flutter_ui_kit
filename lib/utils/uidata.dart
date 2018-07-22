@@ -1,9 +1,7 @@
-
-
 import 'dart:ui';
 import 'package:flutter/material.dart';
 
-class UIData{
+class UIData {
   //routes
   static const String homeRoute = "/home";
   static const String profileOneRoute = "/View Profile";
@@ -22,8 +20,6 @@ class UIData{
   static const String dashboardOneRoute = "/Dashboard 1";
   static const String dashboardTwoRoute = "/Dashboard 2";
 
-
-
   //strings
   static const String appName = "Whg's UIKit";
 
@@ -40,7 +36,6 @@ class UIData{
     Colors.orange.shade900
   ];
 
-
   //images
   static const String imageDir = "assets/images";
   static const String pkImage = "$imageDir/pk.jpg";
@@ -53,10 +48,10 @@ class UIData{
   static const String shoppingImage = "$imageDir/shopping.jpeg";
   static const String timelineImage = "$imageDir/timeline.jpeg";
   static const String verifyImage = "$imageDir/verification.jpg";
-  static const String homeToolBarBgImage = "https://mmbiz.qpic.cn/mmbiz_jpg/cprpPre9lU2FFLzvPpWZHOp0iaIymJGq3qy89LcE8d1LficKicqsaibqEjD9HJIjUwA7fh13bHUoVJOO9pkoFQqmzw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1";
+  static const String homeToolBarBgImage =
+      "https://mmbiz.qpic.cn/mmbiz_jpg/cprpPre9lU2FFLzvPpWZHOp0iaIymJGq3qy89LcE8d1LficKicqsaibqEjD9HJIjUwA7fh13bHUoVJOO9pkoFQqmzw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1";
 
   //gneric
   static const String coming_soon = "敬请等待";
-
-
+  static const String unknow = "未知页面";
 }

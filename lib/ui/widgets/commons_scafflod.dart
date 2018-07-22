@@ -4,7 +4,7 @@ import 'package:ui_kit/ui/widgets/common_float.dart';
 import 'package:ui_kit/utils/uidata.dart';
 
 //通用的空白页
-class CommonScafflod extends StatelessWidget {
+class CommonScaffold extends StatelessWidget {
   final appTitle;
   final Widget bodyData;
   final showFAB;
@@ -17,7 +17,7 @@ class CommonScafflod extends StatelessWidget {
   final centerDocked;
   final elevation;
 
-  CommonScafflod(
+  CommonScaffold(
       {this.appTitle,
       this.bodyData,
       this.showFAB = false,

@@ -166,9 +166,10 @@ class HomePage extends StatelessWidget {
                             child: ListTile(
                               title: Text(data.items[i]),
                               onTap: () {
+                                print(" ======= " + "${data.pages[i]}");
                                 Navigator.pop(context);
                                 Navigator.pushNamed(
-                                    context, "/${data.pages[i]}");
+                                    context, "${data.pages[i]}");
                               },
                             ),
                           ),

@@ -31,7 +31,7 @@ class NotFoundPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CommonScafflod(
+    return CommonScaffold(
       appTitle: appTitle,
       bodyData: bodyData(),
       showDrawer: false,
