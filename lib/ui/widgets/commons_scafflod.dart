@@ -16,6 +16,7 @@ class CommonScaffold extends StatelessWidget {
   final floatingIcon;
   final centerDocked;
   final elevation;
+  final appbarBackgroundColor;
 
   CommonScaffold(
       {this.appTitle,
@@ -28,7 +29,8 @@ class CommonScaffold extends StatelessWidget {
       this.showBottomNav = false,
       this.floatingIcon,
       this.centerDocked = false,
-      this.elevation = 4.0});
+      this.elevation = 4.0,
+      this.appbarBackgroundColor = Colors.black54});
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +39,7 @@ class CommonScaffold extends StatelessWidget {
       backgroundColor: backGroundColor != null ? backGroundColor : null,
       appBar: AppBar(
         elevation: elevation,
-        backgroundColor: Colors.black,
+        backgroundColor: appbarBackgroundColor,
         title: Text(appTitle),
         actions: <Widget>[
           SizedBox(
@@ -55,7 +57,9 @@ class CommonScaffold extends StatelessWidget {
       ),
       drawer: showDrawer ? CommonDrawer() : null,
       body: bodyData,
-      floatingActionButton: showFAB ? CustomFloat() : null,
+      floatingActionButton: showFAB ? CustomFloat(qrCallback: (){
+        Navigator.pop(context);
+      },) : null,
       floatingActionButtonLocation: centerDocked
           ? FloatingActionButtonLocation.centerDocked
           : FloatingActionButtonLocation.endFloat,

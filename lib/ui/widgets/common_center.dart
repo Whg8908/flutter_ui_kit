@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ui_kit/ui/widgets/profile_tile.dart';
-import 'package:ui_kit/utils/uidata.dart';
 
 class CommonCenter extends StatelessWidget {
   final title;
@@ -14,9 +13,9 @@ class CommonCenter extends StatelessWidget {
   Widget build(BuildContext context) {
     deviceSize = MediaQuery.of(context).size;
     return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(colors: UIData.kitGradients),
-      ),
+//      decoration: BoxDecoration(
+//        gradient: LinearGradient(colors: UIData.kitGradients),
+//      ),
       height: deviceSize.height * 0.1,
       alignment: Alignment.center,
       child: Center(

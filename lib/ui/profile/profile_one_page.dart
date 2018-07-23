@@ -88,31 +88,6 @@ class ProfileOnePage extends StatelessWidget {
         ),
       );
 
-  //第二行
-  Widget followColumn(Size deviceSize) => Container(
-        height: deviceSize.height * 0.13,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            ProfileTile(
-              title: "1.5k",
-              subtitle: "文章",
-            ),
-            ProfileTile(
-              title: "2.5k",
-              subtitle: "粉丝",
-            ),
-            ProfileTile(
-              title: "10k",
-              subtitle: "评论",
-            ),
-            ProfileTile(
-              title: "1.2k",
-              subtitle: "关注",
-            ),
-          ],
-        ),
-      );
 
   //第三行
   Widget descColumn() => Container(
@@ -175,3 +150,30 @@ class ProfileOnePage extends StatelessWidget {
         ),
       );
 }
+
+
+//第二行
+Widget followColumn(Size deviceSize) => Container(
+  height: deviceSize.height * 0.13,
+  child: Row(
+    mainAxisAlignment: MainAxisAlignment.spaceAround,
+    children: <Widget>[
+      ProfileTile(
+        title: "1.5k",
+        subtitle: "文章",
+      ),
+      ProfileTile(
+        title: "2.5k",
+        subtitle: "粉丝",
+      ),
+      ProfileTile(
+        title: "10k",
+        subtitle: "评论",
+      ),
+      ProfileTile(
+        title: "1.2k",
+        subtitle: "关注",
+      ),
+    ],
+  ),
+);

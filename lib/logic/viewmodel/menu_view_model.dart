@@ -19,8 +19,18 @@ class MenuViewModel {
           title: "购物",
           icon: Icons.shopping_cart,
           image: UIData.shoppingImage,
-          pages: [UIData.shoppingOneRoute, UIData.shoppingTwoRoute, UIData.shoppingThreeRoute, "购物"],
-          items: ["购物清单", "购物详情", "商品详情", "购物"]),
+          pages: [
+            UIData.shoppingOneRoute,
+            UIData.shoppingTwoRoute,
+            UIData.shoppingThreeRoute,
+            "购物"
+          ],
+          items: [
+            "购物清单",
+            "购物详情",
+            "商品详情",
+            "购物"
+          ]),
       Menu(
           title: "登录",
           icon: Icons.send,
@@ -31,14 +41,34 @@ class MenuViewModel {
           title: "时间轴",
           icon: Icons.timeline,
           image: UIData.timelineImage,
-          pages: [UIData.timelineOneRoute, UIData.timelineTwoRoute, "时间轴 3", "时间轴 4"],
-          items: ["Feed", "Tweets", "时间轴 3", "时间轴 4"]),
+          pages: [
+            UIData.timelineOneRoute,
+            UIData.timelineTwoRoute,
+            "时间轴 3",
+            "时间轴 4"
+          ],
+          items: [
+            "朋友圈",
+            "Tweets",
+            "时间轴 3",
+            "时间轴 4"
+          ]),
       Menu(
           title: "表盘",
           icon: Icons.dashboard,
           image: UIData.dashboardImage,
-          pages: [UIData.dashboardOneRoute, UIData.dashboardTwoRoute, "表盘 3", "表盘 4"],
-          items: ["表盘 1", "表盘 2", "表盘 3", "表盘 4"]),
+          pages: [
+            UIData.dashboardOneRoute,
+            UIData.dashboardTwoRoute,
+            "表盘 3",
+            "表盘 4"
+          ],
+          items: [
+            "表盘 1",
+            "表盘 2",
+            "表盘 3",
+            "表盘 4"
+          ]),
       Menu(
           title: "设置",
           icon: Icons.settings,
@@ -55,8 +85,18 @@ class MenuViewModel {
           title: "付款",
           icon: Icons.payment,
           image: UIData.paymentImage,
-          pages: [UIData.paymentOneRoute, UIData.paymentTwoRoute, "付款 3", "付款 4"],
-          items: ["信用卡", "支付成功", "付款 3", "付款 4"]),
+          pages: [
+            UIData.paymentOneRoute,
+            UIData.paymentTwoRoute,
+            "付款 3",
+            "付款 4"
+          ],
+          items: [
+            "信用卡",
+            "支付成功",
+            "付款 3",
+            "付款 4"
+          ]),
     ];
   }
 }

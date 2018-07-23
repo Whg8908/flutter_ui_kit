@@ -25,6 +25,7 @@ class UIData {
 
   //fonts
   static const String quickFont = "Quicksand";
+  static const String ralewayFont = "Raleway";
 
   //colors
   static List<Color> kitGradients = [
@@ -34,6 +35,15 @@ class UIData {
   static List<Color> kitGradients2 = [
     Color(0xffb7ac50),
     Colors.orange.shade900
+  ];
+
+
+  static List<String> images = [
+    pkImage,
+    profileImage,
+    loginImage,
+    paymentImage,
+    timelineImage,
   ];
 
   //images
@@ -54,4 +64,5 @@ class UIData {
   //gneric
   static const String coming_soon = "敬请等待";
   static const String unknow = "未知页面";
+
 }
