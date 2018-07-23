@@ -88,13 +88,15 @@ class TimelineOnePage extends StatelessWidget {
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: profileColumn(context, data)),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                data.message,
-                style: TextStyle(
-                    fontWeight: FontWeight.normal,
-                    fontFamily: UIData.ralewayFont),
+            Container(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(data.message,
+                    style: TextStyle(
+                        fontWeight: FontWeight.normal,
+                        fontFamily: UIData.ralewayFont),
+                    textAlign: TextAlign.start),
               ),
             ),
             SizedBox(
@@ -116,7 +118,7 @@ class TimelineOnePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           CircleAvatar(
-            backgroundImage: NetworkImage(data.personImage),
+            backgroundImage: AssetImage(data.personImage),
           ),
           Expanded(
               child: Padding(
@@ -153,7 +155,7 @@ class TimelineOnePage extends StatelessWidget {
             label: "${data.likesCount} 点赞",
             icon: FontAwesomeIcons.solidThumbsUp,
             iconColor: Colors.green,
-            onPressed: (){
+            onPressed: () {
               //TODO完善点击事件
               print("点击了点赞");
               Navigator.pop(context);
