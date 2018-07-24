@@ -4,7 +4,9 @@ import 'package:ui_kit/ui/notfound/notfound_page.dart';
 import 'package:ui_kit/ui/pages/home_page.dart';
 import 'package:ui_kit/ui/profile/profile_one_page.dart';
 import 'package:ui_kit/ui/profile/profile_two_page.dart';
+import 'package:ui_kit/ui/settings/settings_one_page.dart';
 import 'package:ui_kit/ui/timeline/timeline_one_page.dart';
+import 'package:ui_kit/ui/timeline/timeline_two_page.dart';
 import 'package:ui_kit/utils/uidata.dart';
 
 class MyApp extends StatelessWidget {
@@ -29,6 +31,10 @@ class MyApp extends StatelessWidget {
       UIData.profileOneRoute: (BuildContext context) => ProfileOnePage(),
       UIData.profileTwoRoute: (BuildContext context) => ProfileTwoPage(),
       UIData.timelineOneRoute: (BuildContext context) => TimelineOnePage(),
+      UIData.timelineTwoRoute: (BuildContext context) => TimelineTwoPage(),
+      UIData.notFoundRoute: (BuildContext context) => NotFoundPage(),
+      UIData.settingsOneRoute: (BuildContext context) => SettingsOnePage(),
+
     },
 
     //如果没有相关的路由配置页面,则跳转到通用页面

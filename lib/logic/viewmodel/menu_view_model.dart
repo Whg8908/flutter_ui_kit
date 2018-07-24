@@ -49,7 +49,7 @@ class MenuViewModel {
           ],
           items: [
             "朋友圈",
-            "Tweets",
+            "推特",
             "时间轴 3",
             "时间轴 4"
           ]),

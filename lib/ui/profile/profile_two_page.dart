@@ -36,7 +36,8 @@ class ProfileTwoPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Card(
-            color: Colors.black54,
+            elevation: 1.0,
+            color: Colors.white30,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
